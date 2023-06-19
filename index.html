@@ -13,231 +13,287 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" data-whatever="@mdo">Open
-        Modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Open Modal</button>
 
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 385px;">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header" style="background: linear-gradient(270.04deg, #FFFAE0 0.03%, rgba(240, 255, 246, 0) 99.96%), #FFC0C0;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/male 1.png" alt="User Image" class="mr-3" style="width: 24px; height: 24px;">
-                            <div>
-                                <h5 class="modal-title" style="color: #00252F; font-size: 12px; font-weight: 400;">ETHAN WONG</h5>
-                                <p class="mb-0" style="color: rgba(0, 37, 47, 0.56); font-size: 10px; font-weight: 400;">Male, 60 yrs (Senior Citizen)</p>
-                            </div>
-                        </div>
-                        <div class="mt-0 d-flex flex-column align-items-center">
-                            <label for="recipient-name" class="col-form-label" style="color: #888888; font-size: 10px; margin-top: -10px;">Resident</label>
-                            <span class="badge badge-pill badge-secondary py-1 px-2 rounded-0" style="background-color: white; color: #666666; width: 67px; height: 22px; font-size: 12px; text-align: center; margin-top: -7px;">Malaysia</span>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 385px;">
+            <div class="modal-content"style="border:none;">
+                <!-- Modal Header -->
+                <div class="modal-header"
+                    style="background: linear-gradient(270.04deg, #FFFAE0 0.03%, rgba(240, 255, 246, 0) 99.96%), #FFC0C0;">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/male 1.png" alt="User Image" class="mr-3" style="width: 24px; height: 24px;">
+                        <div>
+                            <h5 class="modal-title" style="color: #00252F; font-size: 12px; font-weight: 400;">ETHAN
+                                WONG</h5>
+                            <p class="mb-0" style="color: rgba(0, 37, 47, 0.56); font-size: 10px; font-weight: 400;">
+                                Male, 60 yrs (Senior Citizen)</p>
                         </div>
                     </div>
-        
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style="width: 117px;">
-                                    <div class="card-header d-flex justify-content-between align-items-center" style="background-color: white;">
-                                        <p class="m-0" style="margin-left: 18px; font-size: 10px;">Patient ID</p>
-                                        <i class="fa-solid fa-address-card" style="color: #ED8383;"></i>
-                                    </div>
-                                    <div class="card-footer" style="background-color: #FFF6EF; color: #666666; font-size: 12px;">5321344</div>
+                    <div class="mt-0 d-flex flex-column align-items-center">
+                        <label for="recipient-name" class="col-form-label"
+                            style="color: #888888; font-size: 10px; margin-top: -10px;margin-right:-35px;">Resident</label>
+                        <span class="badge badge-pill badge-secondary py-1 px-2 rounded-0"
+                            style="background-color: white; color: #666666; width: 67px; height: 22px; font-size: 12px; text-align: center; margin-top: -7px;margin-right:-5px;">Malaysia</span>
+                    </div>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center"
+                                    style="background-color: white; border: none;">
+                                    <p class="m-0" style="margin-left: 18px; font-size: 10px;color: #AAAAAA;">Patient ID</p>
+                                    <i class="fa-solid fa-address-card" style="color: #ED8383;font-size:12px"></i>
                                 </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center p-2" style="background-color: white;">
-                                        <p class="m-0" style="margin-left: 18px; font-size: 10px;">Visit ID</p>
-                                        <i class="fa-solid fa-calendar-days" style="color: #ED8383;"></i>
-                                    </div>
-                                    <div class="card-footer p-2" style="background-color: #FFF6EF; color: #666666; font-size: 12px;">2735678</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center p-2" style="background-color: white;">
-                                        <p class="m-0" style="margin-left: 18px; font-size: 10px;">Ward</p>
-                                        <i class="fa-solid fa-hospital" style="color: #ED8383;"></i>
-                                    </div>
-                                    <div class="card-footer p-2" style="background-color: #FFF6EF; color: #666666; font-size: 12px;">Ward 2A</div>
-                                </div>
+                                <div class="card-footer"
+                                    style="background-color: #FFF6EF; color: #666666; font-size: 12px; border: none;">5321344</div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center p-2" style="background-color: white;">
-                                        <div class="d-flex flex-row">
-                                            <p class="m-0" style="margin-left: 18px; font-size: 10px; color: #AAAAAA;">Bed</p> &nbsp;
-                                            <p class="m-0" style="margin-left: 18px; font-size: 10px; color: #6C6C6C;">(F5-102)</p>
-                                        </div>
-                                        <i class="fas fa-bed" style="color: #ED8383;"></i>
-                                    </div>
-                                    <div class="card-footer p-2" style="background-color: #FFF6EF; color: #666666; font-size: 12px;">Single Bed</div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center p-2"
+                                    style="background-color: white; border: none;">
+                                    <p class="m-0" style="margin-left: 18px; font-size: 10px;color: #AAAAAA;">Visit ID</p>
+                                    <i class="fa-solid fa-calendar-days" style="color: #ED8383;font-size:12px"></i>
                                 </div>
+                                <div class="card-footer p-2"
+                                    style="background-color: #FFF6EF; color: #666666; font-size: 12px; border: none;">2735678</div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center p-2" style="background-color: white;">
-                                        <p class="m-0" style="margin-left: 18px; font-size: 10px;">Payor</p>
-                                        <i class="fa-solid fa-umbrella" style="color: #ED8383;"></i>
-                                    </div>
-                                    <div class="card-footer p-2" style="background-color: #FFF6EF; color: #666666; font-size: 12px; padding-left: 5px;">AIA BHD (INDIVIDUAL)</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center p-2"
+                                    style="background-color: white; border: none;">
+                                    <p class="m-0" style="margin-left: 18px; font-size: 10px;color: #AAAAAA;">Ward</p>
+                                    <i class="fa-solid fa-hospital" style="color: #ED8383;font-size:12px"></i>
                                 </div>
+                                <div class="card-footer p-2"
+                                    style="background-color: #FFF6EF; color: #666666; font-size: 12px; border: none;">Ward 2A</div>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Modal Footer -->
-                    <div class="modal-footer" style="background: #E5E5E5; border-radius: 5px;">
-                        <div class="col-md-12">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="m-0" style="color: #00252F; font-size: 18px;">Admission Journey</h2>
-                                <span style="margin-right: 10px; color: #888888; font-size: 9px;">Elapsed Time</span>
-                                <span style="background-color: white; color: #FF0042; font-size: 10px;">02:45</span>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center p-2"
+                                    style="background-color: white; border: none;">
+                                    <div class="d-flex flex-row">
+                                        <p class="m-0" style="font-size: 10px; color: #AAAAAA;">Bed </p>
+                                        <p class="m-0" style=" font-size: 10px; color: #6C6C6C;"> (F5-102)</p>
+                                    </div>
+                                    <i class="fas fa-bed" style="color: #ED8383; font-size: 12px;"></i>
+                                </div>
+                                <div class="card-footer p-2"
+                                    style="background-color: #FFF6EF; color: #666666; font-size: 12px; border: none;">Single Bed</div>
                             </div>
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                        <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
-                                        <div class="d-flex" style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
-                                            <div class="vr"></div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 23px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Admission Request</span>
-                                                        <span style="color: #616161; font-size: 10px; margin-left: 10px;">Dec 06 2021 08:36 AM</span>
-                                                    </span>
-                                                    <br>
-                                                    <i class="fa-solid fa-user-doctor" style="color: #3762A4; font-size: 10px;"></i>
-                                                    <span style="color: #777777; font-size: 10px; margin-top: -14px; margin-left: 13px;">Ratha AP</span>
-                                                </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center p-2"
+                                    style="background-color: white; border: none;">
+                                    <p class="m-0" style="margin-left: 18px; font-size: 10px; color: #AAAAAA;">Payor</p>
+                                    <i class="fa-solid fa-umbrella" style="color: #ED8383; font-size: 12px;"></i>
+                                </div>
+                                <div class="card-footer p-2"
+                                    style="background-color: #FFF6EF; color: #666666; font-size: 12px; padding-left: 5px; border: none;">
+                                    AIA BHD (INDIVIDUAL)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer" style="background:#F4F4F4; border-radius: 5px;border:none;">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h2 class="m-0" style="color: #00252F; font-size: 18px;">Admission Journey</h2>
+                            <span style="margin-right: 10px; color: #888888; font-size: 9px;">Elapsed Time</span>
+                            <span style="background-color: white; color: #FF0042; font-size: 10px;">02:45</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
+                                    <div class="d-flex"
+                                        style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 23px;">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center; ">
+                                                    <span>Admission Request</span>
+                                                    <span
+                                                        style="color: #616161; font-size: 10px; margin-left: 10px;">Dec
+                                                        06 2021 08:36 AM</span>
+                                                </span>
+                                                <!-- <br> -->
+                                                <i class="fa-solid fa-user-doctor"
+                                                    style="color: #3762A4; font-size: 10px;"></i>
+                                                <span
+                                                    style="color: #777777; font-size: 10px;">Ratha
+                                                    AP</span>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                
-                                
-                                
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                        <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
-                                        <div class="d-flex" style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
-                                            <div class="vr"></div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 23px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Sent for IGL Approval</span>
-                                                        <span style="color: #616161; font-size: 10px; margin-left: 10px;">Dec 06 2021 09:00AM</span>
-                                                    </span>
-                                                    <br>
-                                                    <i class="fa-solid fa-user-doctor" style="color: #3762A4; font-size: 10px;"></i>
-                                                    <span style="color: #777777; font-size: 10px; margin-top: -14px; margin-left: 13px;">Jim Chin</span>
-                                                </div>
+                                </div>
+                            </li>
+
+
+
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
+                                    <div class="d-flex"
+                                        style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 23px; ">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center;">
+                                                    <span>Sent for IGL Approval</span>
+                                                    <span
+                                                        style="color: #616161; font-size: 10px; margin-left: 10px;">Dec
+                                                        06 2021 09:00AM</span>
+                                                </span>
+                                                <!-- <br> -->
+                                                <i class="fa-solid fa-user-doctor"
+                                                    style="color: #3762A4; font-size: 10px;"></i>
+                                                <span
+                                                    style="color: #777777; font-size: 10px; ">Jim
+                                                    Chin</span>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                               
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                        <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
-                                        <div class="d-flex" style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
-                                            <div class="vr"></div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 23px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Received IGL Approval</span>
-                                                        <span style="color: #616161; font-size: 10px; margin-left: 10px;">Dec 06 2021 11:23AM</span>
-                                                    </span>
-                                                    <br>
-                                                    <i class="fa-solid fa-user-doctor" style="color: #3762A4; font-size: 10px;"></i>
-                                                    <span style="color: #777777; font-size: 10px; margin-top: -14px; margin-left: 13px;">Jim Chin</span>
-                                                </div>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
+                                    <div class="d-flex"
+                                        style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 23px; ">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center;">
+                                                    <span>Received IGL Approval</span>
+                                                    <span
+                                                        style="color: #616161; font-size: 10px; margin-left: 10px;">Dec
+                                                        06 2021 11:23AM</span>
+                                                </span>
+                                                <!-- <br> -->
+                                                <i class="fa-solid fa-user-doctor"
+                                                    style="color: #3762A4; font-size: 10px;"></i>
+                                                <span
+                                                    style="color: #777777; font-size: 10px; ">Jim
+                                                    Chin</span>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                        <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
-                                        <div class="d-flex" style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
-                                            <div class="vr"></div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 23px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Requested Bed Confirmation</span>
-                                                        <span style="color: #616161; font-size: 10px; margin-left: 10px;">Dec 06 2021 11:38AM</span>
-                                                    </span>
-                                                    <br>
-                                                    <i class="fa-solid fa-user-doctor" style="color: #3762A4; font-size: 10px;"></i>
-                                                    <span style="color: #777777; font-size: 10px; margin-top: -14px; margin-left: 13px;">Ratha AP</span>
-                                                </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle mr-2" style="color: #3AB748; font-size: 28px;"></i>
+                                    <div class="d-flex"
+                                        style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -24px; margin-top: 28px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 23px; ">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center;">
+                                                    <span>Requested Bed Confirmation</span>
+                                                    <span
+                                                        style="color: #616161; font-size: 10px; margin-left: 10px;">Dec
+                                                        06 2021 11:38AM</span>
+                                                </span>
+                                                <!-- <br> -->
+                                                <i class="fa-solid fa-user-doctor"
+                                                    style="color: #3762A4; font-size: 10px;"></i>
+                                                <span
+                                                    style="color: #777777; font-size: 10px; ">Jim
+                                                    Chin</span>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                       <div style="margin-left: -5px;margin-top:-10px">
-                                        <img src="./assets/Ellipse 9 (2).png" alt="img" style="width: 40px;height:40px "/>
-                                        <i class="fa-solid fa-bed" style="font-size: 12px;margin-left:-27px;color: #888888;"></i>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <div style="margin-left: -5px;margin-top:-5px">
+                                        <img src="./assets/Ellipse 9 (2).png" alt="img"
+                                            style="width: 40px;height:40px " />
+                                        <i class="fa-solid fa-bed"
+                                            style="font-size: 12px;margin-left:-27px;color: #888888;"></i>
                                         <!-- <i class="fa-solid fa-bed-empty"  style="font-size: 12px;margin-left:-27px;color: #888888;"></i> -->
-                                       </div>
-                                        <div class="d-flex" style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -14px; margin-top: 28px;">
-                                            <div class="vr"></div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 23px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Admitted</span>
-                                                    </span>
-                                                </div>
+                                    </div>
+                                    <div class="d-flex"
+                                        style="height: 35px; border: 1px solid rgba(138, 169, 181, 0.24); margin-left: -14px; margin-top: 28px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 23px; margin-top: 3px;">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center;">
+                                                    <span>Admitted</span>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <div class="d-flex">
-                                       <div style="margin-left: -5px;margin-top:-10px">
-                                        <img src="./assets/Ellipse 9 (2).png" alt="img" style="width: 40px;height:40px "/>
-                                        <i class="fa-solid fa-bed" style="font-size: 12px;margin-left:-27px;color: #888888;"></i>
-                                       </div>
-                                        <div class="ml-auto">
-                                            <div class="row">
-                                                <div class="col" style="margin-left: 13px; margin-top: -3px;">
-                                                    <span style="font-size: 12px; color: #555555; display: flex; align-items: center;">
-                                                        <span>Accepted</span>
-                                                    </span>
-                                                </div>
+                                </div>
+
+                            </li>
+                            <li class="d-flex align-items-center mb-0">
+                                <div class="d-flex">
+                                    <div style="margin-left: -5px;margin-top:-10px">
+                                        <img src="./assets/Ellipse 9 (2).png" alt="img"
+                                            style="width: 40px;height:40px " />
+                                        <i class="fa-solid fa-bed"
+                                            style="font-size: 12px;margin-left:-27px;color: #888888;"></i>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="row">
+                                            <div class="col" style="margin-left: 10px;">
+                                                <span
+                                                    style="font-size: 12px; color: #555555; display: flex; align-items: center;">
+                                                    <span>Accepted</span>
+                                                </span>
                                             </div>
                                         </div>
-                                    </div>                                  
-                                </li>
-                            </ul>
-                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
+
 
     <script>
         var button = document.querySelector('.btn-primary');
