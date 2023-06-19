@@ -12,3 +12,11 @@ body{
 .card-footer{
     padding: 0 !important;
 }
+.one{
+    margin-right: 5px !important;
+}
+.badge{
+    border-radius: 4px !important;
+    height: 22px;
+    width: 67px;
+}
